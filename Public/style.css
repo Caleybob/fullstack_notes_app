@@ -23,6 +23,12 @@ body {
   max-width: 400px;
 }
 
+.note-buttons {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
 h1 {
   text-align: center;
   color: #333;
@@ -73,7 +79,16 @@ li {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+li span {
+  flex: 1;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .delete-btn {
@@ -91,7 +106,7 @@ li {
 }
 
 .delete-btn:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .edit-btn {
